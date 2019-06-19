@@ -1,7 +1,7 @@
-FROM node:lts-jessie
+FROM node:lts-slim
 
 LABEL "name"="firebase"
-LABEL "version"="1.0.1"
+LABEL "version"="1.0.2"
 LABEL "maintainer"="Jonah Snider <me@jonahsnider.ninja> (jonahsnider.ninja)"
 
 LABEL "com.github.actions.name"="Firebase GitHub Action"
