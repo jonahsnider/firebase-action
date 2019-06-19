@@ -1,7 +1,7 @@
 FROM node:lts-jessie
 
 LABEL "name"="firebase"
-LABEL "version"="1.0.0"
+LABEL "version"="1.0.1"
 LABEL "maintainer"="Jonah Snider <me@jonahsnider.ninja> (jonahsnider.ninja)"
 
 LABEL "com.github.actions.name"="Firebase GitHub Action"
@@ -13,6 +13,7 @@ LABEL "repository"="https://github.com/pizzafox/firebase-action"
 LABEL "homepage"="https://github.com/pizzafox/firebase-action"
 
 COPY license.md readme.md /
+RUN chmod +x entrypoint.sh
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["--help"]
