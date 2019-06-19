@@ -4,7 +4,7 @@ LABEL "name"="firebase"
 LABEL "version"="1.0.0"
 LABEL "maintainer"="Jonah Snider <me@jonahsnider.ninja> (jonahsnider.ninja)"
 
-LABEL "com.github.actions.name"="GitHub Action for Firebase"
+LABEL "com.github.actions.name"="Firebase GitHub Action"
 LABEL "com.github.actions.description"="Wraps the Firebase CLI to enable common commands."
 LABEL "com.github.actions.icon"="globe"
 LABEL "com.github.actions.color"="orange"
