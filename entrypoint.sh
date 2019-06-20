@@ -25,4 +25,4 @@ if [ -n "$PROJECT_ID" ]; then
     firebase use $PROJECT_ID
 fi
 
-sh -c "npx firebase $*"
+sh -c "npx firebase-tools $*"
