@@ -26,10 +26,14 @@ action "Deploy" {
 
 ### Secrets
 
-- `FIREBASE_TOKEN` **Required** Firebase access token
+- `FIREBASE_TOKEN` - **Required** Firebase access token
   - You can obtain a token with `firebase login:ci`
   - For information about access tokens please see the [Firebase docs](https://firebase.google.com/docs/cli#admin-commands)
-  - For information about using Secrets in Actions please see the [Actions docs](https://developer.github.com/actions/creating-workflows/storing-secrets/).
+  - For information about using Secrets in Actions please see the [Actions docs](https://developer.github.com/actions/creating-workflows/storing-secrets/)
+
+### Environment variables
+
+- `PROJECT_ID` - **Optional** Firebase/Google Cloud project ID
 
 ## License
 
