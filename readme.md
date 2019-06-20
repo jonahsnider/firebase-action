@@ -8,7 +8,7 @@ The GitHub Action for [Firebase](https://firebase.com) and wraps the [firebase-t
 
 An example workflow to deploy to Firebase:
 
-```workflow
+```hcl
 workflow "Deploy to Firebase" {
   on = "push"
   resolves = "Deploy"
