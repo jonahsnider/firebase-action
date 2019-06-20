@@ -22,7 +22,7 @@ if [ -z "$FIREBASE_TOKEN" ]; then
 fi
 
 if [ -n "$PROJECT_ID" ]; then
-    firebase use $PROJECT_ID
+    npx firebase-tools use $PROJECT_ID
 fi
 
 sh -c "npx firebase-tools $*"
