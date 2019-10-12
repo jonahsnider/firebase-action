@@ -4,24 +4,18 @@ The GitHub Action for [Firebase](https://firebase.com) and wraps the [firebase-t
 
 ## Usage
 
-### Example Workflow file
+### Example job step
 
-An example workflow to deploy to Firebase:
+An example step you can add to your workflow which deploys to Firebase:
 
-```hcl
-workflow "Deploy to Firebase" {
-  on = "push"
-  resolves = "Deploy"
-}
-
-action "Deploy" {
-  uses = "pizzafox/firebase-action@master"
-  args = "deploy"
-  env = {
-    PROJECT_ID = "google-cloud-or-firebase-project-id"
-  }
-  secrets = ["FIREBASE_TOKEN"]
-}
+```yml
+- name: Firebase GitHub Action
+  uses: pizzafox/firebase-action@1.0.7
+  env:
+    PROJECT_ID: "google-cloud-or-firebase-project-id"
+    FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+  with:
+    args: deploy
 ```
 
 ### Secrets
@@ -29,7 +23,7 @@ action "Deploy" {
 - `FIREBASE_TOKEN` - **Required** Firebase access token
   - You can obtain a token with `firebase login:ci`
   - For information about access tokens please see the [Firebase docs](https://firebase.google.com/docs/cli#admin-commands)
-  - For information about using Secrets in Actions please see the [Actions docs](https://developer.github.com/actions/creating-workflows/storing-secrets/)
+  - For information about using secrets in GitHub Actions please see the [Actions docs](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables)
 
 ### Environment variables
 
