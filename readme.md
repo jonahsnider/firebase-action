@@ -1,6 +1,6 @@
 # GitHub Action for Firebase
 
-The GitHub Action for [Firebase](https://firebase.com) and wraps the [firebase-tools CLI](https://firebase.google.com/docs/cli1).
+The GitHub Action for [Firebase](https://firebase.com) and wraps the [firebase-tools CLI](https://firebase.google.com/docs/cli).
 
 ## Usage
 
